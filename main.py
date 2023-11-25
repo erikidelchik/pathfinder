@@ -269,8 +269,7 @@ def calculate(win, start_square, end_square, blocked_list):
                 if not in_list(i, open):
                     i.f_cost = get_f_cost(i)
                     i.set_parent(current)
-                    if not in_list(i, open):
-                        open.append(i)
+                    open.append(i)
 
 
 def get_all_neighboues(node):
