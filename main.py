@@ -266,7 +266,7 @@ def calculate(win, start_square, end_square, blocked_list):
 
         for i in neighbours:
             if not in_list(i, blocked) and not in_list(i, closed):
-                if not in_list(i, open) or ():
+                if not in_list(i, open):
                     i.f_cost = get_f_cost(i)
                     i.set_parent(current)
                     if not in_list(i, open):
